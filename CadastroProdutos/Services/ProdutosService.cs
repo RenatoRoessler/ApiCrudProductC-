@@ -1,4 +1,5 @@
 using System;
+using MyApp.Model;
 
 namespace MyApp.Service;
 

@@ -1,5 +1,6 @@
 using System;
 using MyApp.Database;
+using MyApp.Model;
 
 namespace MyApp.Service;
 

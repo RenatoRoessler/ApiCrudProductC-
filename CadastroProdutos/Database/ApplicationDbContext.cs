@@ -1,5 +1,6 @@
 using System;
 using Microsoft.EntityFrameworkCore;
+using MyApp.Model;
 
 namespace MyApp.Database;
 
