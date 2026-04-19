@@ -38,6 +38,7 @@ namespace MyApp.Namespace
 
         }
 
+        [Authorize(Roles = "admin")]
         [HttpPost]
         public ActionResult Post(Produto novoProduto)
         {
@@ -53,6 +54,7 @@ namespace MyApp.Namespace
 
         }
 
+        [Authorize(Roles = "admin")]
         [HttpPut("{id}")]
         public ActionResult<Produto> Put(int id, Produto produtoAtualizado)
         {
@@ -73,6 +75,7 @@ namespace MyApp.Namespace
             }
         }
 
+        [Authorize(Roles = "admin")]
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
