@@ -41,10 +41,16 @@ namespace MyApp.Namespace
 
         [Authorize(Roles = "admin")]
         [HttpPost]
-        public ActionResult Post(Produto novoProduto)
+        public ActionResult Post(ProdutoRequest request)
         {
             try
             {
+                var novoProduto = new Produto
+                {
+                    Nome = request.Nome,
+                    Preco = request.Preco,
+                    Estoque = request.Estoque
+                };
                 produtosService.Adicionar(novoProduto);
                 return Created();
             }
