@@ -21,7 +21,7 @@ builder.Services.AddSwaggerGen((x) =>
     x.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme()
     {
         Description = @"Inisra o JWT no campo abaixo usando o seguinte formato: Bearer {seu_token}.",
-        Name = "Autorization",
+        Name = "Authorization",
         In = Microsoft.OpenApi.Models.ParameterLocation.Header,
         Type = Microsoft.OpenApi.Models.SecuritySchemeType.ApiKey,
         Scheme = "Bearer"
